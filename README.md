@@ -1,2 +1,2 @@
 # Planet-Habitability
-A project to simulate planet habitability
+Simulations to check on planet habitability
