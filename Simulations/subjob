@@ -1,0 +1,19 @@
+#PBS -o output.txt
+#PBS -e error.txt
+#PBS -N 4sims
+#PBS -l walltime=744:00:00
+#PBS -l mem=12gb
+#PBS -l nodes=1:ppn=12
+#PBS -m bea
+#PBS -M becere1@unlv.nevada.edu
+
+for i in 1 2 3 4 5 6 7 
+
+do
+
+cd ~/moresims/run_$i
+./mercury6 &
+
+done 
+
+wait
